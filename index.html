@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===== SEO ===== -->
+<title>Profitly | Vi ökar er vinst | Konsult & affärsgenomlysning</title>
+<meta name="description" content="Profitly genomlyser ert företag och ökar omsättning, kundnöjdhet och medarbetarmående, vilket leder till högre vinst. Första genomlysningen är alltid gratis. Pengarna-tillbaka-garanti." />
+<meta name="keywords" content="öka vinst, affärsutveckling, företagskonsult, lönsamhet, omsättning, kundnöjdhet, NPS, medarbetarmående, affärsgenomlysning, konsult Sverige, AI för företag, AI-implementering, AI-utbildning, artificiell intelligens företag" />
+<meta name="author" content="Profitly" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.profitly.se/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="sv_SE" />
+<meta property="og:site_name" content="Profitly" />
+<meta property="og:title" content="Profitly: Vi ökar er vinst" />
+<meta property="og:description" content="Vi genomlyser ert företag och bygger en konkret handlingsplan för ökad vinst. Första genomlysningen gratis. Pengarna-tillbaka-garanti." />
+<meta property="og:url" content="https://www.profitly.se/" />
+<meta property="og:image" content="https://www.profitly.se/logo.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" href="logo-liten.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- ===== Schema.org structured data ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Profitly",
+  "description": "Affärskonsult som genomlyser företag för att öka omsättning, kundnöjdhet och medarbetarmående, vilket leder till ökad vinst.",
+  "slogan": "We elevate your company",
+  "url": "https://www.profitly.se",
+  "image": "https://www.profitly.se/logo.png",
+  "areaServed": "SE",
+  "priceRange": "Första genomlysningen gratis",
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Gratis affärsgenomlysning",
+    "description": "En kostnadsfri genomlysning av ert företag med konkreta förbättringsförslag."
+  }
+}
+</script>
+
+<style>
+:root{
+  /* Brand, hämtat från loggan */
+  --navy:#14305C;          /* djup marinblå */
+  --navy-900:#0D2143;
+  --navy-700:#1B3D72;
+  --blue:#2E6BC6;          /* accent, "ly" i loggan */
+  --blue-light:#5B92E0;
+  --ink:#0E1726;           /* nästan svart, från "Profit" */
+  --gold:#E9B949;          /* premium / vinst-varm accent */
+  --green:#16A34A;         /* profit / positivt */
+  --bg:#FFFFFF;
+  --bg-soft:#F4F7FB;
+  --bg-navy:#0D2143;
+  --line:#E3E9F2;
+  --muted:#5A6B82;
+  --radius:18px;
+  --shadow:0 18px 50px -20px rgba(20,48,92,.35);
+  --shadow-sm:0 6px 22px -10px rgba(20,48,92,.25);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.display{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.02em;line-height:1.1}
+.container{width:min(1160px,92%);margin-inline:auto}
+.accent{color:var(--blue)}
+.gold{color:var(--gold)}
+section{position:relative}
+
+/* ===== Buttons ===== */
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1rem;
+  padding:.95rem 1.7rem;border-radius:999px;border:0;cursor:pointer;
+  text-decoration:none;transition:.25s ease;white-space:nowrap;
+}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 12px 28px -10px rgba(46,107,198,.7)}
+.btn-primary:hover{background:#2459a8;transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--navy-900)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 28px -10px rgba(233,185,73,.8)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+/* ===== Header ===== */
+header{
+  position:sticky;top:0;z-index:50;
+  background:#FFFFFF;
+  border-bottom:1px solid var(--line);
+  box-shadow:0 2px 10px -6px rgba(20,48,92,.18);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.7rem 0}
+.nav img{height:42px;display:block}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;transition:.2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-ai{display:inline-flex;align-items:center;gap:.4rem;font-weight:700!important;color:var(--navy)!important}
+.nav-ai:hover{color:var(--blue)!important}
+.nav-dot{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;background:var(--gold);color:var(--navy-900);padding:.12rem .42rem;border-radius:999px}
+.nav-cta{display:flex;align-items:center;gap:1rem}
+.menu-btn{display:none;background:none;border:0;font-size:1.6rem;color:var(--navy);cursor:pointer}
+
+/* ===== Hero ===== */
+.hero{
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(46,107,198,.18), transparent 60%),
+    linear-gradient(180deg,#0D2143 0%, #14305C 55%, #1B3D72 100%);
+  color:#fff;overflow:hidden;
+  padding:5.5rem 0 6rem;
+}
+.hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+  padding:.4rem .9rem;border-radius:999px;font-size:.85rem;font-weight:600;
+  color:#cfe0fb;margin-bottom:1.5rem;
+}
+.hero h1{font-size:clamp(2.3rem,5vw,3.8rem);font-weight:800;color:#fff}
+.hero h1 .grad{
+  color:var(--gold);
+}
+.hero p.lead{font-size:1.18rem;color:#c4d2e8;margin:1.4rem 0 2rem;max-width:30em}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.hero-note{margin-top:1.3rem;font-size:.92rem;color:#9fb3d4;display:flex;align-items:center;gap:.5rem}
+
+/* Hero stat card */
+.hero-card{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  border-radius:var(--radius);padding:1.8rem;backdrop-filter:blur(8px);
+  box-shadow:var(--shadow);
+}
+.hero-card h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:#9fb3d4;font-weight:700;margin-bottom:1.4rem}
+.stat-row{display:flex;align-items:baseline;gap:1rem;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.stat-row:last-child{border-bottom:0;padding-bottom:0}
+.stat-row .num{flex:0 0 8.2rem;font-family:'Plus Jakarta Sans';font-size:2.2rem;font-weight:800;color:#fff;line-height:1;white-space:nowrap}
+.stat-row .num small{font-size:1.1rem;color:var(--gold);margin-left:.15em}
+.stat-row .num .arr{font-size:1.3rem;font-weight:600;color:var(--blue-light);margin:0 .12em;vertical-align:middle}
+.stat-row .lbl{font-size:.92rem;color:#bcccea}
+
+/* ===== Logos / trust strip ===== */
+.trust{background:var(--bg-soft);border-bottom:1px solid var(--line);padding:1.4rem 0}
+.trust .container{display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;text-align:center}
+.trust span{color:var(--muted);font-size:.92rem;font-weight:500}
+.trust b{color:var(--navy);font-weight:700}
+
+/* ===== Section heading ===== */
+.sec{padding:5.5rem 0}
+.sec-head{text-align:center;max-width:46rem;margin:0 auto 3.2rem}
+.sec-head .tag{color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.82rem}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800;margin:.7rem 0 .9rem}
+.sec-head p{color:var(--muted);font-size:1.1rem}
+
+/* ===== Pillars (vad vi ökar) ===== */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.pillar{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:2rem;transition:.25s;box-shadow:var(--shadow-sm);
+}
+.pillar:hover{transform:translateY(-6px);border-color:var(--blue-light)}
+.pillar .ico{
+  width:54px;height:54px;border-radius:14px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--navy),var(--blue));margin-bottom:1.2rem;
+}
+.pillar .ico svg{width:26px;height:26px;stroke:#fff}
+.pillar h3{font-size:1.25rem;font-weight:700;margin-bottom:.5rem}
+.pillar p{color:var(--muted);font-size:.97rem}
+.pillar .arrow{margin-top:1.1rem;color:var(--green);font-weight:700;font-size:.92rem;display:flex;align-items:center;gap:.4rem}
+
+/* ===== Process ===== */
+.process{background:var(--bg-soft)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;counter-reset:step}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.8rem 1.5rem;position:relative;box-shadow:var(--shadow-sm);
+}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  font-family:'Plus Jakarta Sans';font-weight:800;font-size:1rem;
+  color:#fff;background:var(--blue);width:40px;height:40px;border-radius:12px;
+  display:grid;place-items:center;margin-bottom:1.1rem;
+}
+.step h3{font-size:1.1rem;margin-bottom:.45rem}
+.step p{color:var(--muted);font-size:.93rem}
+
+/* ===== AI-Profit ===== */
+.aiprofit{padding:5.5rem 0}
+.ai-card{
+  position:relative;overflow:hidden;border-radius:26px;
+  background:
+    radial-gradient(700px 340px at 88% 0%, rgba(46,107,198,.45), transparent 60%),
+    radial-gradient(600px 300px at 0% 100%, rgba(233,185,73,.20), transparent 55%),
+    linear-gradient(135deg,#0D2143,#14305C 60%,#1B3D72);
+  color:#fff;padding:3.4rem clamp(1.5rem,4vw,3.5rem);box-shadow:var(--shadow);
+}
+.ai-card::before{
+  content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:42px 42px;mask:radial-gradient(60% 60% at 80% 10%,#000,transparent 75%);
+}
+.ai-top{position:relative;max-width:42rem;margin-bottom:2.6rem}
+.ai-top .badge{background:var(--gold);color:var(--navy-900)}
+.ai-top h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:800;margin:.5rem 0 .8rem}
+.ai-top h2 .accent{color:var(--blue-light)}
+.ai-top p{color:#c4d2e8;font-size:1.12rem}
+.ai-grid{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-bottom:2.4rem}
+.ai-item{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  border-radius:16px;padding:1.5rem;transition:.25s;
+}
+.ai-item:hover{background:rgba(255,255,255,.1);transform:translateY(-4px)}
+.ai-item .ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--blue-light));margin-bottom:1rem}
+.ai-item .ico svg{width:24px;height:24px;stroke:#fff}
+.ai-item h3{font-size:1.12rem;font-weight:700;margin-bottom:.4rem}
+.ai-item p{color:#bcccea;font-size:.92rem}
+.ai-cta{position:relative;display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+.ai-cta .note{color:#9fb3d4;font-size:.95rem}
+
+/* ===== Results / proof ===== */
+.proof{background:linear-gradient(135deg,var(--navy-900),var(--navy-700));color:#fff}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;text-align:center}
+.proof-grid .big{font-family:'Plus Jakarta Sans';font-size:clamp(2.6rem,5vw,3.6rem);font-weight:800;line-height:1}
+.proof-grid .big .gold{color:var(--gold)}
+.proof-grid p{color:#bcccea;margin-top:.5rem;font-size:1rem}
+.proof .sec-head h2{color:#fff}
+.proof .sec-head p{color:#bcccea}
+
+/* ===== Offer / guarantee ===== */
+.offer-wrap{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.offer-card{border-radius:var(--radius);padding:2.5rem;box-shadow:var(--shadow)}
+.offer-free{background:#fff;border:2px solid var(--blue)}
+.offer-guarantee{
+  background:linear-gradient(135deg,#14305C,#1B3D72);color:#fff;
+  position:relative;overflow:hidden;
+}
+.offer-guarantee::after{
+  content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;
+  background:radial-gradient(circle,rgba(233,185,73,.35),transparent 70%);
+}
+.badge{
+  display:inline-block;background:var(--green);color:#fff;font-weight:700;
+  font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;
+  padding:.35rem .8rem;border-radius:999px;margin-bottom:1.1rem;
+}
+.badge.gold{background:var(--gold);color:var(--navy-900)}
+.offer-card h3{font-size:1.6rem;margin-bottom:.8rem}
+.offer-card ul{list-style:none;margin:1.3rem 0}
+.offer-card li{display:flex;gap:.7rem;padding:.45rem 0;font-size:1rem}
+.offer-card li svg{flex:none;width:22px;height:22px;margin-top:2px}
+.offer-free li svg{stroke:var(--green)}
+.offer-guarantee li svg{stroke:var(--gold)}
+.offer-guarantee p.sub{color:#c4d2e8}
+
+/* ===== Founder / story ===== */
+.story-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center}
+.story-visual{
+  background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:var(--radius);
+  padding:3rem 2.5rem;color:#fff;box-shadow:var(--shadow);
+}
+.story-visual .quote{font-family:'Plus Jakarta Sans';font-size:1.5rem;font-weight:700;line-height:1.3}
+.story-visual .who{margin-top:1.6rem;color:#bcccea;font-size:.95rem}
+.story h2{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;margin-bottom:1.2rem}
+.story p{color:var(--muted);margin-bottom:1rem;font-size:1.05rem}
+.story .mini-stats{display:flex;gap:2.5rem;margin-top:1.8rem;flex-wrap:wrap}
+.mini-stats .m .n{font-family:'Plus Jakarta Sans';font-size:1.8rem;font-weight:800;color:var(--navy)}
+.mini-stats .m .t{color:var(--muted);font-size:.9rem}
+
+/* ===== FAQ ===== */
+.faq-list{max-width:48rem;margin:0 auto}
+.faq{border:1px solid var(--line);border-radius:14px;margin-bottom:.9rem;background:#fff;overflow:hidden}
+.faq summary{
+  cursor:pointer;padding:1.2rem 1.5rem;font-weight:700;font-family:'Plus Jakarta Sans';
+  font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;color:var(--blue);transition:.2s}
+.faq[open] summary::after{transform:rotate(45deg)}
+.faq .ans{padding:0 1.5rem 1.3rem;color:var(--muted)}
+
+/* ===== CTA ===== */
+.cta-final{background:linear-gradient(135deg,var(--navy-900),var(--blue));color:#fff;text-align:center}
+.cta-final h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:1rem}
+.cta-final p{color:#cfe0fb;font-size:1.15rem;max-width:34rem;margin:0 auto 2rem}
+
+/* ===== Footer ===== */
+footer{background:var(--ink);color:#9fb3d4;padding:3rem 0 2rem}
+.foot-grid{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-start}
+footer img{height:38px;filter:brightness(0) invert(1);opacity:.9;margin-bottom:1rem}
+footer a{color:#9fb3d4;text-decoration:none}
+footer a:hover{color:#fff}
+.foot-col h4{color:#fff;font-size:.9rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.9rem}
+.foot-col p,.foot-col a{display:block;font-size:.93rem;margin-bottom:.5rem}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:2.5rem;padding-top:1.5rem;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .hero .container,.story-wrap,.offer-wrap{grid-template-columns:1fr}
+  .pillars,.proof-grid{grid-template-columns:1fr}
+  .steps,.ai-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .hero{padding:3.5rem 0 4rem}
+}
+@media(max-width:540px){
+  .steps,.ai-grid{grid-template-columns:1fr}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container nav">
+    <img src="logo.png" alt="Profitly, we elevate your company" />
+    <nav class="nav-links">
+      <a href="#metod">Så jobbar vi</a>
+      <a href="#ai-profit" class="nav-ai">AI-Profit<span class="nav-dot">Nytt</span></a>
+      <a href="#resultat">Resultat</a>
+      <a href="#erbjudande">Erbjudande</a>
+      <a href="#story">Om oss</a>
+      <a href="#faq">Frågor</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://fantastical.app/eric-AJ2d/möte-med-profitly" target="_blank" rel="noopener" class="btn btn-primary">Boka gratis genomlysning</a>
+    </div>
+    <button class="menu-btn" aria-label="Meny">☰</button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div>
+      <h1>Vi förvandlar potential till <span class="grad">ökad vinst</span></h1>
+      <p class="lead">Profitly genomlyser ert företag på djupet och bygger en konkret handlingsplan som lyfter er omsättning, minskar era kostnader, ökar er kundnöjdhet tillsammans med välmående personal, allt som driver er lönsamhet framåt.</p>
+      <div class="hero-cta">
+        <a href="https://fantastical.app/eric-AJ2d/möte-med-profitly" target="_blank" rel="noopener" class="btn btn-gold">Boka din gratis genomlysning →</a>
+        <a href="#metod" class="btn btn-ghost">Se hur det funkar</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>Bevisad track record</h3>
+      <div class="stat-row">
+        <div class="num">0<span class="arr">→</span>10<small>Mkr</small></div>
+        <div class="lbl">Vi har byggt bolag från 0 till 10Msek på 4 år.</div>
+      </div>
+      <div class="stat-row">
+        <div class="num">+87<small>NPS</small></div>
+        <div class="lbl">kundnöjdhet med 2 000 medlemmar</div>
+      </div>
+      <div class="stat-row">
+        <div class="num">100<small>%</small></div>
+        <div class="lbl">garanti: nöjd eller pengarna tillbaka</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust">
+  <div class="container">
+    <span><b>Gratis</b> första genomlysning</span>
+    <span>•</span>
+    <span><b>Konkret</b> handlingsplan</span>
+    <span>•</span>
+    <span><b>Vi implementerar</b> tillsammans med er</span>
+    <span>•</span>
+    <span><b>Pengarna tillbaka</b>-garanti</span>
+  </div>
+</div>
+
+<!-- ===== PILLARS ===== -->
+<section class="sec" id="metod">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Vad vi ökar</span>
+      <h2>Tre hävstänger, ett resultat: <span class="accent">högre vinst</span></h2>
+      <p>Vinst byggs inte av en enda sak. Vi arbetar med de tre områden som tillsammans avgör er lönsamhet, och får dem att dra åt samma håll.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v6h-6"/></svg></div>
+        <h3>Ökad omsättning</h3>
+        <p>Vi hittar er otappade potential: nya intäktsströmmar, bättre prissättning, vassare försäljning och fler affärer från befintliga kunder.</p>
+        <div class="arrow">↗ Mer intäkter</div>
+      </article>
+      <article class="pillar">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Högre kundnöjdhet</h3>
+        <p>Nöjda kunder stannar längre, köper mer och rekommenderar er. Vi bygger kundupplevelser som ger lojalitet och en NPS att vara stolt över.</p>
+        <div class="arrow">↗ Lojalare kunder</div>
+      </article>
+      <article class="pillar">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Bättre medarbetarmående</h3>
+        <p>Medarbetare som mår bra presterar bättre. Vi skapar struktur, tydlighet och kultur som minskar personalomsättning och ökar produktivitet.</p>
+        <div class="arrow">↗ Starkare team</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="sec process">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Så jobbar vi</span>
+      <h2>Från genomlysning till genomförande</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Gratis genomlysning</h3>
+        <p>Vi kartlägger nuläget: siffror, processer, kunder och team. Helt kostnadsfritt och utan förpliktelser.</p>
+      </div>
+      <div class="step">
+        <h3>Handlingsplan</h3>
+        <p>Ni får en konkret, prioriterad plan med tydliga åtgärder och förväntad effekt på vinsten.</p>
+      </div>
+      <div class="step">
+        <h3>Implementering</h3>
+        <p>Vi inför nya strukturer och rutiner tillsammans med er, inte vid sidan av.</p>
+      </div>
+      <div class="step">
+        <h3>Utbildning & coaching</h3>
+        <p>Vi utbildar, coachar och agerar mentor så att förändringen håller långt efter att vi är klara.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI-PROFIT ===== -->
+<section class="aiprofit" id="ai-profit">
+  <div class="container">
+    <div class="ai-card">
+      <div class="ai-top">
+        <span class="badge">Nytt</span>
+        <h2>AI-Profit<span class="accent">: vinst med artificiell intelligens</span></h2>
+        <p>Vi hjälper er att ta tillvara på AI på riktigt. Från första piloten till färdig drift bygger vi avancerade AI-teknologier och nya arbetssätt som sänker kostnader, frigör tid och ökar er vinst.</p>
+      </div>
+      <div class="ai-grid">
+        <article class="ai-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 3v4M3 5h4M6 17v4M4 19h4"/><path d="M13 3l2.5 6.5L22 12l-6.5 2.5L13 21l-2.5-6.5L4 12l6.5-2.5z"/></svg></div>
+          <h3>Uppstart</h3>
+          <p>Vi kartlägger var AI ger störst effekt och sätter igång med rätt verktyg och pilotprojekt.</p>
+        </article>
+        <article class="ai-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 2 6 2s6-1 6-2v-5"/></svg></div>
+          <h3>Utbildning</h3>
+          <p>Vi lyfter hela teamets AI-kompetens med praktisk, anpassad utbildning som ger självförtroende.</p>
+        </article>
+        <article class="ai-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+          <h3>Strukturering</h3>
+          <p>Vi bygger struktur, processer och datagrund så att AI blir en naturlig del av verksamheten.</p>
+        </article>
+        <article class="ai-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/><path d="m5 5 2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+          <h3>Implementering</h3>
+          <p>Vi driftsätter lösningarna i er vardag och säkrar att de används, mäts och ger resultat.</p>
+        </article>
+      </div>
+      <div class="ai-cta">
+        <a href="https://fantastical.app/eric-AJ2d/möte-med-profitly" target="_blank" rel="noopener" class="btn btn-gold">Boka ett möte →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROOF ===== -->
+<section class="sec proof" id="resultat">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag" style="color:var(--gold)">Resultat som talar</span>
+      <h2>Vi har gjort resan själva</h2>
+      <p>Det här är inte teori. Det är erfarenhet från att ha byggt flera företag från grunden.</p>
+    </div>
+    <div class="proof-grid">
+      <div>
+        <div class="big">10<span class="gold">Mkr</span></div>
+        <p>i omsättning byggd från noll på 4 år</p>
+      </div>
+      <div>
+        <div class="big">+87 <span class="gold">NPS</span></div>
+        <p>kundnöjdhet med 2 000 medlemmar</p>
+      </div>
+      <div>
+        <div class="big">100<span class="gold">%</span></div>
+        <p>nöjd-kund-garanti på varje uppdrag</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFFER ===== -->
+<section class="sec" id="erbjudande">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Ert erbjudande</span>
+      <h2>Ingen risk. Bara uppsida.</h2>
+      <p>Vi är så säkra på att vi skapar värde att vi tar risken åt er.</p>
+    </div>
+    <div class="offer-wrap">
+      <div class="offer-card offer-free">
+        <span class="badge">Gratis</span>
+        <h3>Första genomlysningen kostar 0 kr</h3>
+        <p style="color:var(--muted)">Vi går igenom ert företag och visar vart möjligheterna finns, innan ni betalar en krona.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Analys av omsättning, kunder, produkt & team</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Identifierar förbättringsområden</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Inga förpliktelser, ni bestämmer nästa steg</li>
+        </ul>
+        <a href="https://fantastical.app/eric-AJ2d/möte-med-profitly" target="_blank" rel="noopener" class="btn btn-primary">Boka genomlysning</a>
+      </div>
+      <div class="offer-card offer-guarantee">
+        <span class="badge gold">Garanti</span>
+        <h3>Pengarna tillbaka, alltid</h3>
+        <p class="sub">Levererar vi inte det vi lovar? Då får ni pengarna tillbaka. Så enkelt är det. Risken är helt vår.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Resultatfokus från första mötet</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Vi delar er risk, inte bara er uppsida</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Långsiktigt partnerskap, inte bara en rapport</li>
+        </ul>
+        <a href="https://fantastical.app/eric-AJ2d/möte-med-profitly" target="_blank" rel="noopener" class="btn btn-gold">Prata med oss</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STORY ===== -->
+<section class="sec story" id="story">
+  <div class="container">
+    <div>
+      <span class="tag" style="color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.82rem">Om Profitly</span>
+      <h2>Erfarenhet, inte gissningar</h2>
+      <p>Profitly grundades av entreprenörer som själva har byggt flera företag från noll. Vi vet hur det är att kämpa med kassaflöde, kunder, rekrytering och tillväxt, för vi har gjort det.</p>
+      <p>Den erfarenheten gör oss till mer än konsulter. Vi blir en partner som genomlyser, planerar, implementerar, utbildar och coachar, tills resultatet syns på sista raden.</p>
+      <div class="mini-stats">
+        <div class="m"><div class="n">10Mkr</div><div class="t">byggt på 4 år</div></div>
+        <div class="m"><div class="n">+87</div><div class="t">NPS, 2 000 medlemmar</div></div>
+        <div class="m"><div class="n">0 kr</div><div class="t">för första steget</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec process" id="faq">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Vanliga frågor</span>
+      <h2>Bra att veta</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq" open>
+        <summary>Är den första genomlysningen verkligen gratis?</summary>
+        <div class="ans">Ja, helt gratis och utan förpliktelser. Vi vill visa er värdet innan ni fattar något beslut.</div>
+      </details>
+      <details class="faq">
+        <summary>Hur fungerar pengarna-tillbaka-garantin?</summary>
+        <div class="ans">Levererar vi inte det vi kommit överens om får ni pengarna tillbaka. Vi tar risken eftersom vi är trygga i att vi skapar verkligt värde.</div>
+      </details>
+      <details class="faq">
+        <summary>Vilka företag passar ni för?</summary>
+        <div class="ans">Vi arbetar med små och medelstora företag i alla branscher som vill öka sin vinst, oavsett om utmaningen ligger i försäljning, kundnöjdhet eller organisation.</div>
+      </details>
+      <details class="faq">
+        <summary>Är ni kvar efter att handlingsplanen är klar?</summary>
+        <div class="ans">Absolut. Vi hjälper er implementera nya strukturer och rutiner, håller utbildningar samt coachar och agerar mentor så att förändringen håller över tid.</div>
+      </details>
+      <details class="faq">
+        <summary>Hur snabbt kan vi komma igång?</summary>
+        <div class="ans">Boka en gratis genomlysning så hör vi av oss inom kort för att hitta en tid som passar er.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="sec cta-final" id="kontakt">
+  <div class="container">
+    <h2>Redo att öka er vinst?</h2>
+    <p>Boka er kostnadsfria genomlysning idag. Inga förpliktelser, ingen risk, bara en tydlig bild av er potential.</p>
+    <a href="https://fantastical.app/eric-AJ2d/möte-med-profitly" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:1.1rem;padding:1.1rem 2.2rem">Boka gratis genomlysning →</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h4>Tjänster</h4>
+        <a href="#metod">Affärsgenomlysning</a>
+        <a href="#metod">Handlingsplan</a>
+        <a href="#metod">Implementering</a>
+        <a href="#metod">Utbildning & coaching</a>
+        <a href="#ai-profit">AI-Profit</a>
+      </div>
+      <div class="foot-col">
+        <h4>Företag</h4>
+        <a href="#story">Om oss</a>
+        <a href="#resultat">Resultat</a>
+        <a href="#faq">Vanliga frågor</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <p><a href="mailto:hej@profitly.se">hej@profitly.se</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Profitly. Alla rättigheter förbehållna.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobilmeny, enkel toggle
+document.querySelector('.menu-btn').addEventListener('click',()=>{
+  const l=document.querySelector('.nav-links');
+  l.style.display = (l.style.display==='flex')?'none':'flex';
+  l.style.position='absolute';l.style.top='62px';l.style.left='0';l.style.right='0';
+  l.style.flexDirection='column';l.style.background='#fff';l.style.padding='1rem 5%';
+  l.style.borderBottom='1px solid var(--line)';l.style.gap='1rem';
+});
+</script>
+</body>
+</html>
